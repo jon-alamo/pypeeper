@@ -1,6 +1,6 @@
 import unittest
 
-from pypeeper import Observable, Observer
+from pypeeper.pypeeper import Observable, Observer
 
 
 class DummyObservableA(Observable):

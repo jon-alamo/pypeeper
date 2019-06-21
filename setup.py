@@ -5,8 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='pypeeper',
-    version='0.1',
-    scripts=['pypeeper'],
+    version='0.2',
     author="Jonatan Rivilla Alamo",
     author_email="jonrivala@gmail.com",
     description=(
@@ -15,7 +14,7 @@ setuptools.setup(
     ),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/rolandshoemaker/py-peeper",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

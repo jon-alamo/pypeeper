@@ -1,4 +1,4 @@
-from pypeeper import Observable, Observer
+from pypeeper.pypeeper import Observable, Observer
 
 
 # Make whichever class wanted to be observed subclass of Observable
