@@ -1,11 +1,11 @@
-#Py-Peeper
+# Py-Peeper
 A very simple, minimalist, single-threaded and broadcast-routed approach to the observable pattern in Python.
 
-##Installation
+## Installation
 ```pip install pypeeper```
 
 
-###Usage
+### Usage
 #### Implementing an Observable class
 Every class can be converted to observable just by subclassing it from
 Observer. If class attribute "pattern" is overwritten with a valid regex
@@ -43,7 +43,7 @@ my_observable.set_attribute(True)
 my_observable.attribute_a = 10
 my_observable.whatever_attr = None
 ```
-####Console output
+#### Console output
 ```
 >>> ObservableClass 2448221506696 attribute_a False True
 >>> ObservableClass 2448221506696 attribute_a True 10
