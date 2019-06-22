@@ -32,6 +32,6 @@ my_observable.attribute_a = 10
 my_observable.whatever_attr = None
 
 # Console output
-# >>> ObservableClass 2448221506696 attribute_a False True
-# >>> ObservableClass 2448221506696 attribute_a True 10
-# >>> ObservableClass 2448221506696 whatever_attr 0 None
+# >>> AnyClass 2448221506696 attribute_a False True
+# >>> AnyClass 2448221506696 attribute_a True 10
+# >>> AnyClass 2448221506696 whatever_attr 0 None
