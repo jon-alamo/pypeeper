@@ -36,12 +36,12 @@ class ObserverClass(Observer):
 ```
 #### Instantiate and play
 ```
-my_observable_class = AnyClass()
+my_observable = AnyClass()
 my_observer = ObserverClass()
 
-my_observable_class.set_attribute(True)
-my_observable_class.attribute_a = 10
-my_observable_class.whatever_attr = None
+my_observable.set_attribute(True)
+my_observable.attribute_a = 10
+my_observable.whatever_attr = None
 ```
 #### Console output
 ```
