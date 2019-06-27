@@ -14,7 +14,7 @@ def _get_property_setter(attribute_name, notify_objects):
         if getattr(self, attribute_name) is not value:
             for notify_object in notify_objects:
                 notify_object(
-                    self.__class__.__name__,
+                    self,
                     id(self),
                     attribute_name.strip('__'),
                     getattr(self, attribute_name),

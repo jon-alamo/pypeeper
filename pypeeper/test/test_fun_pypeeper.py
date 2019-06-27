@@ -65,7 +65,7 @@ class TestPyPeeper(unittest.TestCase):
         my_observable.set_attr_a(True)
         change_event = my_observer.notify_log[-1]
 
-        self.assertEqual(my_observable.__class__.__name__, change_event[0])
+        self.assertEqual(my_observable.__class__.__name__, change_event[0].__class__.__name__)
         self.assertEqual(id(my_observable), change_event[1])
         self.assertEqual('attribute_a', change_event[2])
         self.assertEqual(False, change_event[3])
@@ -77,7 +77,7 @@ class TestPyPeeper(unittest.TestCase):
         my_observable.set_attr_a(True)
         change_event = my_observer.notify_log[-1]
 
-        self.assertEqual(my_observable.__class__.__name__, change_event[0])
+        self.assertEqual(my_observable.__class__.__name__, change_event[0].__class__.__name__)
         self.assertEqual(id(my_observable), change_event[1])
         self.assertEqual('attribute_a', change_event[2])
         self.assertEqual(False, change_event[3])
@@ -99,7 +99,7 @@ class TestPyPeeper(unittest.TestCase):
         change_event = my_observer.notify_log[-2]
         change_event_2 = my_observer.notify_log[-1]
 
-        self.assertEqual(change_event[0], change_event_2[0])
+        self.assertEqual(change_event[0].__class__.__name__, change_event_2[0].__class__.__name__)
         self.assertNotEqual(change_event[1], change_event_2[1])
         self.assertEqual(change_event[2], change_event_2[2])
         self.assertEqual(change_event[3], change_event_2[3])
