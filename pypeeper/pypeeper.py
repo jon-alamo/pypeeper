@@ -86,7 +86,6 @@ class ObservablesFactory(type):
             instance = _create_properties(instance, cls,  cls._notify_methods)
 
         elif issubclass(cls, Observer):
-            instance = super(ObservablesFactory, cls).__call__(*args, **kwargs)
             cls._notify_methods.append(instance.notify)
 
         return instance
