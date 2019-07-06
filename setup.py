@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='pypeeper',
-    version='0.2',
+    version='0.3',
     author="Jonatan Rivilla Alamo",
     author_email="jonrivala@gmail.com",
     description=(
