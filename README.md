@@ -1,5 +1,5 @@
 # Py-Peeper
-A very simple, minimalist, single-threaded and broadcast-routed approach to the observable pattern in Python.
+A very simple (and tricky) observer pattern in Python.
 
 ## Installation
 ```python
